@@ -2,36 +2,67 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes</title>
 </head>
 
-<section class="shoe-card">
-    <img src="https://unsplash.com/photos/jZyacqaR4iI" alt="asics shoe with basic color blue">
-    <h1>Asics</h1>
-    <article>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At autem, modi ea corrupti delectus vel
-        laboriosam facilis tempora neque aliquam minima, doloremque debitis sed maxime quisquam consequuntur iusto enim,
-        quae sequi. Hic quia dolorem voluptatum consequuntur, facilis similique autem tempora quaerat neque repellat
-        beatae eos odit placeat labore cum architecto.
-    </article>
-</section>
-<section class="shoe-card">
+<body>
+    <main>
+        <section class="background">
+            <ul class="container-shoe-card">
+                <li class="shoe-cart" id="one">
 
-    <h1>Adidas</h1>
-    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus facere deleniti nisi facilis,
-        porro debitis voluptatem, qui quas corporis incidunt, voluptatum provident quis unde! Fugit deleniti dolore et
-        fugiat id ullam excepturi molestiae rerum provident saepe, quia minus. Doloremque officiis amet laborum
-        inventore iste.</article>
-</section>
-<section class="shoe-card">
-    <h1>New Balance</h1>
-    <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In amet quos dolores magni, deleniti illum
-        commodi. Assumenda ipsam commodi adipisci molestias esse cumque harum veniam cupiditate possimus, expedita
-        tempore omnis quisquam est temporibus quo nulla.</article>
-</section>
+                    <article>
+                        <aside>Free shipping!</aside>
+                        <h1 class="brand-name">Asics</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At autem, modi ea corrupti
+                            delectus vel</p>
+                    </article>
+                    <div class=detail-box>
+                        <p class="price">$65 USD</p>
+                        <div class="selectors">
+                            <div class="size-selector">
+                                <p>Size: <select>6</select></p>
+
+                            </div>
+                            <div class="quantity-selector">
+                                <p>Quantity:<select>1</select> </p>
+
+                            </div>
+                        </div>
+                        <div class="available-color">Color: <p class="circle" id="blue"></p>
+                            <p class="circle" id="red"></p>
+                            <p class="circle" id="black"></p>
+
+                        </div>
+
+                        <button class="buy-now">Add to Cart</button>
+                    </div>
+                </li>
+                <li class="shoe-cart">
+                    <h1>Adidas</h1>
+                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus facere deleniti
+                        nisi
+                        facilis,
+                        porro debitis voluptatem, qui quas corporis incidunt, voluptatum provident quis unde! Fugit
+                        deleniti
+                    </article>
+                </li>
+                <li class="shoe-cart">
+                    <h1>New Balance</h1>
+                    <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In amet quos dolores magni,
+                        deleniti
+                        illum
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
