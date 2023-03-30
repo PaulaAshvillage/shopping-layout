@@ -4,11 +4,71 @@
   --color-circle-red: #da4841;
   --color-circle-green: #989737;
   --color-circle-pink: #d4668e;
+  --border-radius-normal: 1rem;
+  --margin-detail-box: 2rem;
 }
-body {
+html {
+  font-family: arial;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-block: 0.25rem;
+}
+.container-shoe-card {
   background-color: var(--color-background);
   display: flex;
+  border: solid black 2px;
+  gap: 2rem;
+  flex-direction: center;
 }
-.shoe-card {
-  flex: 1 1 0%; /*alle gleich breit*/
+
+.shoe-cart {
+  border: solid violet;
+  list-style: none;
+  justify-content: center;
+  width: 600px;
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+}
+.price {
+  background-color: green;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 30px;
+}
+.available-color {
+  display: flex;
+}
+.circle {
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-radius: 25px;
+
+  margin-left: 4px;
+}
+#blue {
+  background-color: var(--color-button);
+}
+#red {
+  background-color: var(--color-circle-red);
+}
+#black {
+  background-color: black;
+}
+.buy-now {
+  color: 000;
+  background-color: var(--color-button);
 }
