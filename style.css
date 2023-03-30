@@ -4,11 +4,14 @@
   --color-circle-red: #da4841;
   --color-circle-green: #989737;
   --color-circle-pink: #d4668e;
+  --color-font-gray: #cbcbcb;
   --border-radius-normal: 1rem;
+  --border-radius-tiny: 0.25rem;
   --margin-detail-box: 2rem;
+  --padding-detail-box: 1.5rem;
 }
 html {
-  font-family: arial;
+  font-family: quicksand;
 }
 * {
   margin: 0;
@@ -18,38 +21,86 @@ html {
 h1 {
   margin-block: 0.25rem;
 }
+
 .container-shoe-card {
-  background-color: var(--color-background);
   display: flex;
+  height: 800px;
   border: solid black 2px;
   gap: 2rem;
   flex-direction: center;
+  align-items: stretch;
 }
-
 .shoe-cart {
+  border-radius: var(--border-radius-normal);
   border: solid violet;
   list-style: none;
   justify-content: center;
-  width: 600px;
+  width: 500px;
+}
+
+.image {
+  border-top-left-radius: var(--border-radius-normal);
+  border-top-right-radius: var(--border-radius-normal);
+  height: 250px;
+  background-image: url(https://camo.githubusercontent.com/386948ec10cc7166718d9ec43783e3f176fe8043abad15775d23eade78196b5b/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313536303037323831302d3163666662303966616630663f697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c664878386647567566444238664878382669786c69623d72622d312e322e31266175746f3d666f726d6174266669743d63726f7026773d3134373026713d3830);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.name-description-box {
+  padding-inline: 1.5rem;
+}
+.brand-name {
+  padding-top: 1.5rem;
+}
+.description {
+  padding-block: 1.25rem;
+  color: var(--color-font-gray);
+  line-height: 1.5rem;
 }
 
 .detail-box {
+  padding: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
   display: flex;
-  flex-direction: column;
   background-color: var(--color-background);
+  border-radius: var(--border-radius-normal);
+  height: 300px;
+
+  flex-direction: column;
+  align-items: stretch;
 }
 .price {
-  background-color: green;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  line-height: 32px;
+  height: 32px;
+  border-radius: var(--border-radius-tiny);
 }
 
 .selectors {
+  margin: 0;
+  padding-block: 1.5rem;
+  padding-right: 2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  gap: 30px;
+  gap: 2rem;
+}
+
+.select-button {
+  padding-left: 2.5rem;
+  margin-left: 0.25rem;
+  border-color: white;
+  border-radius: var(--border-radius-tiny);
 }
 .available-color {
+  margin: 0;
+  padding-block: 1.5rem;
+  padding-right: 2rem;
   display: flex;
+  gap: 0.25rem;
 }
 .circle {
   display: block;
@@ -69,6 +120,11 @@ h1 {
   background-color: black;
 }
 .buy-now {
-  color: 000;
+  margin: 0;
+  padding-block: 1.5rem;
+  padding-right: 2rem;
+  color: white;
+  border-color: var(--color-button);
+  border-radius: var(--border-radius-tiny);
   background-color: var(--color-button);
 }
