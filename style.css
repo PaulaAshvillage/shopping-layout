@@ -4,7 +4,7 @@
   --color-circle-red: #da4841;
   --color-circle-green: #989737;
   --color-circle-pink: #d4668e;
-  --color-font-gray: #cbcbcb;
+  --color-font-gray: #a6a3a3;
   --border-radius-normal: 1rem;
   --border-radius-tiny: 0.25rem;
   --margin-detail-box: 2rem;
@@ -24,30 +24,63 @@ h1 {
 
 .container-shoe-card {
   display: flex;
-  height: 800px;
-  border: solid black 2px;
+  height: 830px;
+  width: 1500px;
   gap: 2rem;
   flex-direction: center;
   align-items: stretch;
 }
 .shoe-cart {
   border-radius: var(--border-radius-normal);
-  border: solid violet;
+
   list-style: none;
   justify-content: center;
-  width: 500px;
+  width: 100%;
 }
 
-.image {
+.image-article-one {
+  display: flex;
   border-top-left-radius: var(--border-radius-normal);
   border-top-right-radius: var(--border-radius-normal);
-  height: 250px;
+  height: 37%;
+  width: 100%;
   background-image: url(https://camo.githubusercontent.com/386948ec10cc7166718d9ec43783e3f176fe8043abad15775d23eade78196b5b/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313536303037323831302d3163666662303966616630663f697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c664878386647567566444238664878382669786c69623d72622d312e322e31266175746f3d666f726d6174266669743d63726f7026773d3134373026713d3830);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+}
+.image-article-two {
+  display: flex;
+  border-top-left-radius: var(--border-radius-normal);
+  border-top-right-radius: var(--border-radius-normal);
+  height: 37%;
+  width: 100%;
+  background-image: url(https://camo.githubusercontent.com/3c412b173fef73e3c44a5aad8330234d4809c03cbc2a0dde18f260707616ed00/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f666c61676765642f70686f746f2d313535363633373634302d3263383064333230316265383f69786c69623d72622d312e322e3126697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c66487838664756756644423866487838266175746f3d666f726d6174266669743d63726f7026773d3134373026713d3830);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.image-article-three {
+  display: flex;
+  border-top-left-radius: var(--border-radius-normal);
+  border-top-right-radius: var(--border-radius-normal);
+  height: 37%;
+  width: 100%;
+  background-image: url(https://camo.githubusercontent.com/418e0658bb2b6ba856b9fdaa1b668d92516bc8dfa3ee253e57ab44cb9412b019/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313533393138353434313735352d3736393437336132333537303f697869643d4d6e77784d6a4133664442384d48787761473930627931775957646c664878386647567566444238664878382669786c69623d72622d312e322e31266175746f3d666f726d6174266669743d63726f7026773d3134373126713d3830);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.free-shipping-badge {
+  position: fixed;
+  margin-top: 1rem;
+  margin-left: 21rem;
+  background-color: var(--color-background);
+  opacity: 50%;
+  padding: 0.25rem;
+  border-radius: var(--border-radius-tiny);
 }
 .name-description-box {
   padding-inline: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .brand-name {
   padding-top: 1.5rem;
@@ -62,12 +95,11 @@ h1 {
   padding: 1.5rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.25rem;
   display: flex;
   background-color: var(--color-background);
   border-radius: var(--border-radius-normal);
-  height: 300px;
-
+  height: 275px;
   flex-direction: column;
   align-items: stretch;
 }
@@ -104,10 +136,9 @@ h1 {
 }
 .circle {
   display: block;
-  height: 16px;
-  width: 16px;
+  height: 1.5rem;
+  width: 1.5rem;
   border-radius: 25px;
-
   margin-left: 4px;
 }
 #blue {
@@ -119,9 +150,41 @@ h1 {
 #black {
   background-color: black;
 }
+#green-and-black {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-circle-green) 0.75rem,
+    black 0.75rem
+  );
+}
+#blue-and-black {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-button) 0.75rem,
+    black 0.75rem
+  );
+}
+#pink-and-black {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-circle-pink) 0.75rem,
+    black 0.75rem
+  );
+}
+#red-and-white {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-circle-red) 0.75rem,
+    white 0.75rem
+  );
+}
+#black-and-white {
+  background-image: linear-gradient(90deg, black 0.75rem, white 0.75rem);
+}
+
 .buy-now {
   margin: 0;
-  padding-block: 1.5rem;
+  padding-block: 1rem;
   padding-right: 2rem;
   color: white;
   border-color: var(--color-button);
